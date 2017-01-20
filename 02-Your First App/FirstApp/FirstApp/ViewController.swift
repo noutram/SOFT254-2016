@@ -31,9 +31,7 @@ class ViewController: UIViewController {
    }
 
 
-   @IBAction func doButtonTap(_ sender: Any) {
-      print("You tapped the button")
-      
+   @IBAction func doButtonTap(_ sender: Any) {     
       let nextString = messageArray[index]
       self.messageLabel.text = nextString
       index += 1
