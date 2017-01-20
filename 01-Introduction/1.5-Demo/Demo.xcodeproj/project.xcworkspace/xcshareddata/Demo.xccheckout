@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>687193C9-E084-4E2D-A7AD-6DC52433C5DD</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Demo</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>EA0ACA0BF81E4C6820C49ED9509B15F27E3FDE01</key>
+		<string>https://github.com/SoCM/iOS-FastTrack-2014-2015.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>01-Introduction/1.5-Demo/Demo.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>EA0ACA0BF81E4C6820C49ED9509B15F27E3FDE01</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/SoCM/iOS-FastTrack-2014-2015.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>EA0ACA0BF81E4C6820C49ED9509B15F27E3FDE01</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>EA0ACA0BF81E4C6820C49ED9509B15F27E3FDE01</string>
+			<key>IDESourceControlWCCName</key>
+			<string>iOS-FastTrack-2014-2015</string>
+		</dict>
+	</array>
+</dict>
+</plist>
