@@ -31,6 +31,9 @@
                                 <rect key="frame" x="153" y="315.5" width="69" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Tell Me!"/>
+                                <connections>
+                                    <action selector="doButtonTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="D9w-qi-ng6"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

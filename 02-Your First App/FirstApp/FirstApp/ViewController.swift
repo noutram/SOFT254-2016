@@ -21,5 +21,8 @@ class ViewController: UIViewController {
    }
 
 
+   @IBAction func doButtonTap(_ sender: Any) {
+      print("You tapped the button")
+   }
 }
 
