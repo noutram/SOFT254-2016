@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="IdleDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="vDA-fT-EQv">
+                                <rect key="frame" x="79.5" y="167" width="161" height="234.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Idle App" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yrL-oa-74k">
+                                        <rect key="frame" x="49" y="0.0" width="63" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ME-dB-nfM">
+                                        <rect key="frame" x="0.0" y="80.5" width="161" height="30"/>
+                                        <state key="normal" title="Process some numbers"/>
+                                        <connections>
+                                            <action selector="doNumberCrunch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EpI-iX-qUk"/>
+                                        </connections>
+                                    </button>
+                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="o2y-yR-KYm">
+                                        <rect key="frame" x="20" y="170.5" width="121" height="2"/>
+                                    </progressView>
+                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="EPA-wb-VIs">
+                                        <rect key="frame" x="20" y="232.5" width="121" height="2"/>
+                                        <color key="progressTintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </progressView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="EPA-wb-VIs" secondAttribute="trailing" constant="20" symbolic="YES" id="4ph-fX-QQA"/>
+                                    <constraint firstItem="o2y-yR-KYm" firstAttribute="leading" secondItem="vDA-fT-EQv" secondAttribute="leading" constant="20" symbolic="YES" id="cO1-bq-O75"/>
+                                    <constraint firstAttribute="trailing" secondItem="o2y-yR-KYm" secondAttribute="trailing" constant="20" symbolic="YES" id="fCx-qG-JU9"/>
+                                    <constraint firstItem="EPA-wb-VIs" firstAttribute="leading" secondItem="vDA-fT-EQv" secondAttribute="leading" constant="20" symbolic="YES" id="yBT-bE-DZ2"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="vDA-fT-EQv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Lam-Lj-GqG"/>
+                            <constraint firstItem="vDA-fT-EQv" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="lsj-4U-Ae9"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="progressView" destination="o2y-yR-KYm" id="ePG-Iq-aOB"/>
+                        <outlet property="progressView2" destination="EPA-wb-VIs" id="awq-yL-dJg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="391" y="404"/>
+        </scene>
+    </scenes>
+</document>

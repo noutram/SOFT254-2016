@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<playground version='6.0' target-platform='ios' display-mode='raw' last-migration='0800'>
+    <pages>
+        <page name='Section 1 - First Class Types'/>
+        <page name='Section 2 - Function Composition'/>
+        <page name='Section 3 - Generic Functions'/>
+    </pages>
+</playground>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="qhh-MI-eh0">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Message-->
+        <scene sceneID="4L0-dA-9sA">
+            <objects>
+                <viewController storyboardIdentifier="VC2" id="qhh-MI-eh0" customClass="SecondViewController" customModule="NavigationDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="WrW-rV-cZ0"/>
+                        <viewControllerLayoutGuide type="bottom" id="hYl-wc-nZ2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="pBg-C4-JiZ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="59F-zi-y8y">
+                                <rect key="frame" x="130.5" y="244.5" width="59" height="30"/>
+                                <state key="normal" title="Tap this!">
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="doTapThis:" destination="qhh-MI-eh0" eventType="touchUpInside" id="vJp-nu-Wi7"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0OK-2y-jaO">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="59F-zi-y8y" secondAttribute="centerY" id="8nU-Up-JLr"/>
+                            <constraint firstAttribute="centerX" secondItem="59F-zi-y8y" secondAttribute="centerX" id="a5V-OW-QAB"/>
+                            <constraint firstItem="0OK-2y-jaO" firstAttribute="centerX" secondItem="pBg-C4-JiZ" secondAttribute="centerX" id="jHV-Qw-uTP"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="0OK-2y-jaO" secondAttribute="bottom" constant="8" id="niC-lO-lvg"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="0OK-2y-jaO"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="jHV-Qw-uTP"/>
+                                <exclude reference="niC-lO-lvg"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="subviews">
+                                <include reference="0OK-2y-jaO"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="jHV-Qw-uTP"/>
+                                <include reference="niC-lO-lvg"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout" top="YES"/>
+                    <navigationItem key="navigationItem" title="Message" id="uZe-dA-RmK">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="UTN-ll-lcy"/>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sso-I9-W1Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2189" y="1315"/>
+        </scene>
+    </scenes>
+</document>

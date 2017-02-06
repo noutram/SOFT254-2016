@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="TableChallenge" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="s36-6D-8OE">
+                                <rect key="frame" x="16" y="85.5" width="288" height="482.5"/>
+                                <color key="separatorColor" red="0.85882352941176465" green="0.6588235294117647" blue="0.80784313725490198" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="vXZ-lx-hvc" id="m8n-pP-FHb"/>
+                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="Ex7-Cy-IrT"/>
+                                </connections>
+                            </tableView>
+                            <imageView userInteractionEnabled="NO" alpha="0.69999999999999973" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="banner" translatesAutoresizingMaskIntoConstraints="NO" id="WlY-3H-906">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="77.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="WlY-3H-906" secondAttribute="height" multiplier="120:29" id="MAh-zL-elP"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="s36-6D-8OE" secondAttribute="trailing" id="5me-jj-nYo"/>
+                            <constraint firstItem="s36-6D-8OE" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="RFf-gi-g6P"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="s36-6D-8OE" secondAttribute="bottom" id="fwp-nb-zmR"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="WlY-3H-906" secondAttribute="trailing" constant="-16" id="hFd-nM-yqc"/>
+                            <constraint firstItem="s36-6D-8OE" firstAttribute="top" secondItem="WlY-3H-906" secondAttribute="bottom" constant="8" symbolic="YES" id="ip9-PB-BhL"/>
+                            <constraint firstItem="WlY-3H-906" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="topMargin" id="lzF-bI-Bj7"/>
+                            <constraint firstItem="WlY-3H-906" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="wSg-rI-Kll"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="302" y="493"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="banner" width="736" height="177"/>
+    </resources>
+</document>

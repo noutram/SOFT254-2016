@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="JVP-2J-8cf">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Modal View Controller1-->
+        <scene sceneID="mtA-hV-vyG">
+            <objects>
+                <viewController storyboardIdentifier="DEMO3" id="JVP-2J-8cf" customClass="ModalViewController1" customModule="PresentingDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="FQf-BW-sHj"/>
+                        <viewControllerLayoutGuide type="bottom" id="fXG-zY-b2o"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Rca-bW-xSM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="48" translatesAutoresizingMaskIntoConstraints="NO" id="sX8-rM-f6T">
+                                <rect key="frame" x="139.33333333333331" y="353" width="135.33333333333331" height="30"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SGQ-vd-eTr">
+                                        <rect key="frame" x="0.0" y="0.0" width="33.333333333333314" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="adm-y4-c2j">
+                                        <rect key="frame" x="81.333333333333314" y="0.0" width="54.000000000000028" height="30"/>
+                                        <state key="normal" title="Dismiss"/>
+                                        <connections>
+                                            <action selector="doDismiss:" destination="JVP-2J-8cf" eventType="touchDown" id="mSx-4I-P5U"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="sX8-rM-f6T" firstAttribute="centerY" secondItem="Rca-bW-xSM" secondAttribute="centerY" id="D2K-Qz-KVk"/>
+                            <constraint firstItem="sX8-rM-f6T" firstAttribute="centerX" secondItem="Rca-bW-xSM" secondAttribute="centerX" id="mXC-7o-afs"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="titleLabel" destination="SGQ-vd-eTr" id="lqW-FX-fHH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="L3N-fW-tac" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="654" y="388"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<playground version='6.0' target-platform='ios' display-mode='raw' last-migration='0810'>
+    <pages>
+        <page name='Parameters and Basic Syntax'/>
+        <page name='Type Inference'/>
+        <page name='Parameter semantics'/>
+        <page name='Capturing and Currying'/>
+        <page name='Call backs'/>
+        <page name='Creating Asychonous APIs'/>
+        <page name='Creating Asynchrnoous API&apos;s with CGD'/>
+        <page name='Retain Cycles'/>
+    </pages>
+</playground>
